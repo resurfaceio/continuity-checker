@@ -1,4 +1,4 @@
-# continuity
+# resurfaceio-continuity-checker
 Continuity checker for Resurface database
 
 This command-line utility verifies that the count of calls in the database monotonically increases over time.
