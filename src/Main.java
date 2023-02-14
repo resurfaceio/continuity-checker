@@ -33,7 +33,7 @@ public class Main {
             System.out.println("   shards loaded in " + (System.currentTimeMillis() - start) + " ms");
 
             start = System.currentTimeMillis();
-            try (ResultSet rs = s.executeQuery("select count(*) as total, current_time as total from resurface.data.message_union")){
+            try (ResultSet rs = s.executeQuery("select count(*) as total, current_time as total from resurface.data.msg_union")){
                 while (rs.next()) {
                     long current_total = rs.getLong(1);
                     String current_time = rs.getString(2);
